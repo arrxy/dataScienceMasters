@@ -48,8 +48,6 @@ eg. above code
 #question 6
 
 #question 7 & 8
-
-
 cnt = 10
 while (cnt > 0):
     print(cnt, end = ' ')
