@@ -21,11 +21,14 @@ price = min(units, 100) * 4.5 + max(0, min(units - 100, 100)) * 6 + max(0, min(u
 print("Q3 => ",price) 
 
 #question4
-res = []
-for i in range(1, 101, 1):
-    a = i * i * i
-    if a % 4 == 0 or a % 5 == 0:
-        res.append(i)
+# res = []
+# for i in range(1, 101, 1):
+#     a = i * i * i
+#     if a % 4 == 0 or a % 5 == 0:
+#         res.append(i)
+# print("Q4 => ",res)
+
+res = [i for i in range(1, 101, 1) if i ** 3 % 4 == 0 or i ** 3 % 5 == 0]
 print("Q4 => ",res)
 
 # Q5
